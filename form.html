@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    
+<!--  jquery script  -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--  validation script  -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+
+<link rel="stylesheet" href="./style/form.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<link rel="shortcut icon" href="./images/mama-tega-logo.jpg" type="image/x-icon">
+<link href="css/hover.css" rel="stylesheet" media="all">
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+<script src="./script/firebaseConfig.js"></script>
+
+
+</head> 
+<body>
+
+
+  <div class="bg">
+     <div class="overlay">
+
+  <div class="form-fadeIn-container">
+    <div class="form-background">
+
+        <!-- Form -->
+
+        <form id="logForm" class="form-class" autocomplete="on">
+
+         <div class="buttons">
+             <div class="new-customer-container">
+               <a href="#" class="new-customer hvr-bounce-to-bottom" id="newCustomerBtn" onclick="slideDown()">New Customer</a>
+             </div>
+             <div class="existing-customer-container" id="disable">
+               <a href="#" class="existing-customer" id="existingCustomerBtn" onclick="slideUp()">Already a member</a>
+             </div>
+         </div>
+
+        
+         
+
+         <!--Toggle input field-->
+            <div class="toggle-input-field">
+                <div class="full-name">
+                   <label for="name">Full Name <span>*</span></label><br>
+                   <input type="text" name="name" id="name" required>
+                </div>
+
+                
+
+                <div class="email-address">
+                   <label for="email">Email <span>*</span></label><br>
+                   <input type="email" name="email" id="email" required>
+                </div>
+    
+               <div class="phone-number">
+                   <label for="phone-number">Phone <span>*</span></label><br>
+                  <input type="tel" id="phone" name="phone"  pattern="+94[7-9]{2}-[0-9]{3}-[0-9]{4}" value="+234">
+                  <!-- <p id="error-message"></p> -->
+                </div>  
+
+                
+                <div class="location">
+                    <label for="location">Location</label>
+                <select id="location">
+                    <option value="Ikeja">Ikeja</option>
+                    <option value="Agege">Agege</option>
+                    <option value="Ajeromi-Ifelodun">Ajeromi-Ifelodun</option>
+                    <option value="Alimosho">Alimosho</option>
+                    <option value="Amuwo-Odofin">Amuwo-Odofin</option>
+                    <option value="Apapa">Apapa</option>
+                    <option value="Badagry">Badagry</option>
+                    <option value="Epe">Epe</option>
+                    <option value="Eti-Osa">Eti-Osa</option>
+                    <option value="Ibeju/Lekki">Ibeju/Lekki</option>
+                    <option value="Ifako-Ijaye">Ifako-Ijaye</option>
+                    <option value="Ikorodu">Ikorodu</option>
+                    <option value="Kosofe">Kosofe</option>
+                    <option value="Lagos Island">Lagos Island</option>
+                    <option value="Lagos Mainland">Lagos Mainland</option>
+                    <option value="Mushin">Mushin</option>
+                    <option value="Ojo">Ojo</option>
+                    <option value="Oshodi-Isolo">Oshodi-Isolo</option>
+                    <option value="Shomolu">Shomolu</option>
+                    <option value="Surulere">Surulere</option>
+                </select><br>
+            </div>  
+            </div>
+              <!--Toggle input field end-->
+
+            <div class="search-bar-container">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <hr>
+            <br>
+
+            <label for="purpose">Purpose header</label><br>
+            <select name="purpose" id="purpose">
+                <option value="Spa">Spa</option>
+                <option value="Pedicure">Pedicure</option>
+                <option value="Facials">Facials</option>
+                <option value="Teeth whitening">Teeth whitening</option>
+                <option value="Full-body massage">Full-body massage</option>
+            </select><br>
+
+
+            <!--<label for="date-and-time">Date and Time of Entry</label><br>
+            <input type="datetime-local" name="date-and-time" id="dateAndTime" ><br>-->
+
+       
+            <div class="submit-and-reset">
+               <button type="submit "id="subButton"> Submit </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    
+
+  
+
+    <!--------- nav bar ---------->
+
+    <div class="nav-bar">
+        
+      <nav>
+        <ul>
+           <li><a href="./index.html" class="active">Home</a></li>
+           <li><a href="./dataStorage.html" class="all-customer-log" target="_blank">View all customer log</a></li>
+        </ul>
+    </nav>
+
+    </div>
+    </div>
+
+     <!-- submitted alert message-->
+     <div class="alert">
+      <img src="https://img.icons8.com/cute-clipart/64/000000/save-close.png"/><br>
+      <span>Submitted</span>
+     </div>
+    
+
+
+    <div class="noticeMessage" id="displayMessage">
+      <p id="notice_message"></p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <!--CSS Spinner-->
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    </div>
+    
+  
+  <script>
+   $(document).ready(function() {
+    
+    setTimeout(function(){
+      $('.spinner-wrapper').fadeOut();
+    }, 2000);
+ })
+  
+  </script>
+
+
+    <script src="./datas.js"></script>
+  <script src="./script/form.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers</title>
+
+     <!--  jquery script  -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--  validation script  -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first 
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+<script src="./script/firebaseConfig.js"></script>
+
+</head>
+<body>
+  
+
+  <div id="data-1" style="display: none;"></div>
+
+
+  <table id="customers">
+  <tr class="bg-info">
+    <th>Full Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Location</th>
+    <th>Purpose</th>
+  </tr>
+
+  <tbody id="myTable">
+    
+  </tbody>
+</table>
+
+
+<style>
+ #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+    }
+
+</style>
+
+
+
+  
+
+<script>
+  
+  // save data to firebase
+
+  var database = firebase.database();
+
+var ref = database.ref("records");
+
+
+ref.once("value", function(snapshot){
+  snapshot.forEach(function(childSnapshot){
+     var ref = childSnapshot.val();
+
+
+
+      var myArray = [
+        {'name': document.querySelector("#data-1").innerHTML = ref.name, 'email': document.querySelector("#data-1").innerHTML = ref.email, 'phone': document.querySelector("#data-1").innerHTML = ref.phone, 'location': document.querySelector("#data-1").innerHTML = ref.location, 'purpose': document.getElementById("data-1").innerHTML = ref.purpose /*'dateAndTime': document.querySelector("#data-1").innerHTML = ref.dateAndTime*/}
+      ];
+ 
+     buildTable(myArray);
+ 
+      function buildTable(data){
+        var table = document.getElementById('myTable');
+ 
+        for (var i = 0; i < data.length; i++){
+            var row = `<tr>
+                          <td>${data[i].name}</td>
+                          <td>${data[i].email}</td>
+                          <td>${data[i].phone}</td>
+                          <td>${data[i].location}</td>
+                          <td>${data[i].purpose}</td>
+                       </tr>`
+ 
+                       table.innerHTML += row;
+        }
+      }
+   });
+})
+
+
+
+</script>
+</script>
+
+
+  <!--CSS Spinner-->
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    </div>
+    
+  
+  <script>
+   
+   $(document).ready(function() {
+    
+     setTimeout(function(){
+       $('.spinner-wrapper').fadeOut();
+     }, 2000);
+  })
+  </script>
+
+ 
+</body>
+</html>

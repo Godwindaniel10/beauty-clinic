@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama-Tega cosmetics</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/mama-tega-logo.jpg" type="image/x-icon">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <!--  jquery script  -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--  validation script  -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+</head>
+<body">
+ 
+  <div class="second-bg-container">
+    <div class="second-bg">
+       <!-- Logo -->
+       <img src="./images/mama-tega-logo.jpg" alt="Mama-tega logo">
+
+       
+       <!-- Register customer -->
+       <p class="register-customer-text">Register Customer</p>
+       <!-- Register customer end -->
+   
+
+    <!-- button -->
+    <div class="button-container">
+        <div class="new-customer-button">
+          <a href="./form.html" class="link-1 hvr-shutter-in-horizontal"><span>Register</span></a>
+        </div>
+
+        <div class="view-all-customer-log-button">
+          <a href="./dataStorage.html" target="_blank">View All Customer Log</a>
+        </div>
+    </div>
+    <!-- button end -->
+
+  
+	
+    </div>
+  </div>
+
+  
+
+    <!-- Loader -->
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+      </div>
+      
+    
+    <script>
+     
+     $(document).ready(function() {
+    
+    setTimeout(function(){
+      $('.spinner-wrapper').fadeOut();
+    }, 2000);
+ })
+    </script>
+
+    <!-- Loader -->
+
+
+</body>
+</html>
