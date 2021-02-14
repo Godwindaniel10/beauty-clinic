@@ -168,12 +168,13 @@
 
 
 /* EXISTING CUSTOMER */
+/*
 .existing-customer-container {
     text-align: right;
 }
 .existing-customer-container a {
     /*padding: .7em 2em;
-    background-color: #00af91;*/
+    background-color: #00af91;*
     color: #ffffff;
     text-decoration: underline;
     border-radius: 3px;
@@ -182,6 +183,7 @@
    color:red;
     transition: all 0.5s;
 }
+*/
 /* EXISTING CUSTOMER END */
 
 
@@ -193,7 +195,7 @@
     height: 100%;
     /*margin: auto;*/
     background-color: #a0534469;
-    padding: 1.5em 2em 2em 2em;
+    padding: 1.5em 2em 2.5em 2em;
     border-radius: 10px;
     float: left;
     position: relative;
@@ -331,13 +333,16 @@ p {
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
+    border-radius: 50px;
   }
   .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
     color: white;
+    border-radius: 50px;
   }
   .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
     transform: scaleY(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    border-radius: 50px;
   }
   /***** Bounce To Bottom end *****/
   
@@ -588,7 +593,7 @@ p {
         height: 100%;
         /*margin: auto;*/
         background-color: #a0534469;
-        padding: 3em 2em 4em 2em;
+        /*padding: 3em 2em 4em 2em;*/
         border-radius: 10px;
         float: left;
         position: relative;
@@ -598,12 +603,12 @@ p {
 
     /* BUTTONS */
     .buttons {
-        margin-bottom: 3.5em;
+       /* margin-bottom: 3.5em;*/
     }
 
     /* NEW CUSTOMER BUTTON */
     .new-customer-container {
-        float: left; 
+        float: left;  
     }
     .new-customer-container a {
         padding: .7em 2em;
@@ -621,6 +626,7 @@ p {
     .existing-customer-container {
         text-align: right;
         padding-top: .5em;
+        display: none;
     }
     .existing-customer-container a {
         /*padding: .7em 2em;

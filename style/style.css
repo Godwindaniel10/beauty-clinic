@@ -216,9 +216,9 @@ img {
     body {
         padding: 5em 2em;
         height: 150vh;
-        background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         background-size: cover;
-        background-position: top center;
+        background-position: top center;*/
         background-color: rgb(59, 59, 59);
     }
     /* BODY (BACKGROUND IMAGE) END */
@@ -252,10 +252,10 @@ img {
 
     /* MAMA-TEGA LOGO */
     img {
-        width: 30%;
+        width: 40%;
         height: auto;
         border-radius: 50%;
-        margin-bottom: -0.5em;
+        margin-bottom: -1.5em;
     }
     /* MAMA-TEGA LOGO END */
 
@@ -361,7 +361,7 @@ img {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
     height: auto;
-    padding: 2em 0 3.5em 0;
+    padding: 1.5em 0 1.5em 0;
     margin-top: 1.5em;
     text-align: center;
     border-radius: .5em;
@@ -393,7 +393,8 @@ img {
 /* VIEW ALL CUSTOMER LOG BUTTON */
 .view-all-customer-log-button {
     padding: 1.5em 0 0 0;
-    margin-top: 2em;
+    /*margin-top: 2em;*/
+    display: none;
 }
 .view-all-customer-log-button a{
     background-color: #d40000;
@@ -429,7 +430,7 @@ body {
 
 /* BUTTON CONTAINER */
 .button-container {
-    background-color: rgba(255, 224, 46, 0.4);
+    background-color: rgba(255, 224, 46, 0.4);  
     width: 100%;
     height: auto;
     padding: 2.5em 0 1em 0;

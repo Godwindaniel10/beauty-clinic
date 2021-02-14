@@ -5,7 +5,7 @@ let newCustomerButton = true;
 //slide down function for new customer input fields
 function slideDown() {
     if(newCustomerButton){
-        $(".toggle-input-field").slideDown(1000);
+        $(".toggle-input-field").slideToggle(1000);
     }
 }
 
