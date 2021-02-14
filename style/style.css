@@ -14,10 +14,10 @@
 body {
     padding-top: 1em;
     height: 100vh;
-    background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
-    background-position: top center;
-    background-color: rgb(59, 59, 59);
+    background-position: top center;*/
+    background-color: rgb(0, 0, 0);
 }
 /* BODY (BACKGROUND IMAGE) END */
 
@@ -214,8 +214,8 @@ img {
 
     /* BODY (BACKGROUND IMAGE) */
     body {
-        padding: 5em 2em;
-        height: 150vh;
+        padding: 8em 2em;
+        height: 100vh;
         /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         background-size: cover;
         background-position: top center;*/
@@ -243,12 +243,24 @@ img {
         background-color: rgba(121, 71, 25, 0.9);
         /*margin: 5em 0 0 5em;*/
         text-align: center;
-        padding: 0 1.5em 2em 1.5em;
+        padding: 0 2em 2em 2em;
         border-radius: 20px;
         margin: 0 auto;
         box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
     }
     /* SECOND BACKGROUND END */
+
+/* REGISTER CUSTOMER  HEADER */
+.register-customer-text {
+    font-size: 7vw;
+    color: #ffffff;
+    border-bottom: 2px solid #2c2c2c;
+    font-family: 'Bubblegum Sans', cursive;
+    padding-bottom: .5em;
+    margin-top: 2.5em;
+    text-shadow: 2px 5px 4px #000000;
+}
+/* REGISTER CUSTOMER  HEADER END */
 
     /* MAMA-TEGA LOGO */
     img {
@@ -264,7 +276,7 @@ img {
         background-color: rgba(255, 224, 46, 0.4);
         width: 100%;
         height: auto;
-        padding: 1em 1em;
+        padding: 2em 1em;
         margin-top: 1.5em;
         text-align: center;
         border-radius: .5em;
@@ -274,6 +286,8 @@ img {
     /* VIEW ALL CUSTOMER LOG BUTTON */
     .view-all-customer-log-button {
         padding: 1.5em 0 0 0;
+        /*margin-top: 2em;*/
+        display: none;
     }
     .view-all-customer-log-button a{
         background-color: #d40000;
@@ -300,16 +314,16 @@ img {
 
 /***** ipad *****/
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (min-width: 480px) {
 
     /* BODY (BACKGROUND IMAGE) */
     body {
         padding: 8em 3em;
         height: 150vh;
-        background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         background-size: cover;
-        background-position: center;
-        background-color: rgb(59, 59, 59);
+        background-position: center;*/
+        background-color: rgba(124, 67, 13, 0.829);
     }
     /* BODY (BACKGROUND IMAGE) END */
 
