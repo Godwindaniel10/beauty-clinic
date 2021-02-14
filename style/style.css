@@ -75,7 +75,7 @@ img {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
     height: auto;
-    padding: 2.5em 0;
+    padding: 2.5em 0 1em 0;
     /*margin: 1.5em auto 0 auto;*/
     margin-top: 1.5em;
     text-align: center;
@@ -106,7 +106,7 @@ img {
 
 /* VIEW ALL CUSTOMER LOG BUTTON */
 .view-all-customer-log-button {
-    padding: 2.5em 0 5em 0;
+    padding: 2.5em 0 2.5em 0;
 }
 .view-all-customer-log-button a{
     background-color: #c50b17;
@@ -432,7 +432,7 @@ body {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
     height: auto;
-    padding: 2.5em 0 3.5em 0;
+    padding: 2.5em 0 1em 0;
     /*margin: 1.5em auto 0 auto;*/
     margin-top: 1.5em;
     text-align: center;
