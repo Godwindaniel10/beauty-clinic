@@ -12,12 +12,12 @@
 
 /* BODY (BACKGROUND IMAGE) */
 body {
-    padding-top: 1em;
-    height: 100vh;
+    /*padding-top: 5em;*/
+    /*height: 100vh;*/
     /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: top center;*/
-    background-color: rgb(0, 0, 0);
+    /*background-color: rgb(0, 0, 0);*/
 }
 /* BODY (BACKGROUND IMAGE) END */
 
@@ -104,7 +104,7 @@ img {
 
 /* REGISTER BUTTON END */
 
-/* VIEW ALL CUSTOMER LOG BUTTON */
+/* VIEW ALL CUSTOMER LOG BUTTON 
 .view-all-customer-log-button {
     padding: 2.5em 0 2.5em 0;
 }
@@ -115,7 +115,7 @@ img {
     padding: 1em 2em;
     border-radius: .3em;
     font-size: 1rem;
-    /*float: left;*/
+    /*float: left;*
     font-family: 'Roboto', sans-serif;
 }
 .view-all-customer-log-button a:hover {
@@ -212,16 +212,32 @@ img {
 
 @media only screen and (max-width: 480px) {
 
-    /* BODY (BACKGROUND IMAGE) */
-    body {
-        padding: 8em 2em;
-        height: 100vh;
-        /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+     /* BODY (BACKGROUND IMAGE) */
+     .bg {
+        position:relative;
         background-size: cover;
-        background-position: top center;*/
-        background-color: rgb(59, 59, 59);
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        font-family: 'Roboto', sans-serif;
+        height: 150vh;
+        max-width: 100%;
+        padding: 10em 3em;
     }
     /* BODY (BACKGROUND IMAGE) END */
+
+    .overlay {
+        position: absolute;
+        height: 150vh;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 7em 3em 1em 3em;
+    }
+    
      
     /* SECOND BACKGROUND */
     .second-bg-container {
@@ -240,7 +256,7 @@ img {
     .second-bg {
         width: 100%;
         height: 100%;
-        background-color: rgba(121, 71, 25, 0.9);
+        background-color: rgba(121, 71, 25, 0.897);
         /*margin: 5em 0 0 5em;*/
         text-align: center;
         padding: 0 2em 2em 2em;
@@ -256,7 +272,7 @@ img {
     color: #ffffff;
     border-bottom: 2px solid #2c2c2c;
     font-family: 'Bubblegum Sans', cursive;
-    padding-bottom: .5em;
+    /*padding-bottom: .5em;*/
     margin-top: 2.5em;
     text-shadow: 2px 5px 4px #000000;
 }
@@ -317,18 +333,31 @@ img {
 @media only screen and (min-width: 480px) {
 
     /* BODY (BACKGROUND IMAGE) */
-    body {
-        padding: 8em 3em;
-        height: 150vh;
-        /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    .bg {
+        position:relative;
         background-size: cover;
-        background-position: center;*/
-        background-color: rgba(124, 67, 13, 0.829);
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        font-family: 'Roboto', sans-serif;
+        height: 150vh;
+        max-width: 100%;
+        padding: 10em 3em;
     }
     /* BODY (BACKGROUND IMAGE) END */
 
-
- 
+    .overlay {
+        position: absolute;
+        height: 150vh;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 7em 3em 1em 3em;
+    }
+    
 
     /* SECOND BACKGROUND */
     .second-bg-container {
@@ -347,7 +376,7 @@ img {
     .second-bg {
         width: 100%;
         height: 100%;
-        background-color: rgba(121, 71, 25, 0.9);
+        background-color: rgba(121, 71, 25, 0.705);
         /*margin: 5em 0 0 5em;*/
         text-align: center;
         padding: 0 2em 2em 2em;
@@ -356,6 +385,15 @@ img {
         box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
     }
     /* SECOND BACKGROUND END */
+
+     /* MAMA-TEGA LOGO */
+     img {
+        width: 40%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: -1.5em;
+    }
+    /* MAMA-TEGA LOGO END */
 
 /* REGISTER CUSTOMER  HEADER */
 .register-customer-text {
@@ -375,8 +413,8 @@ img {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
     height: auto;
-    padding: 1.5em 0 1.5em 0;
-    margin-top: 1.5em;
+    padding: 3em 0 3em 0;
+    margin-top: 2.5em;
     text-align: center;
     border-radius: .5em;
 }
@@ -405,20 +443,24 @@ img {
 
 
 /* VIEW ALL CUSTOMER LOG BUTTON */
-.view-all-customer-log-button {
-    padding: 1.5em 0 0 0;
-    /*margin-top: 2em;*/
-    display: none;
-}
+/*** disabled ***/
 .view-all-customer-log-button a{
-    background-color: #d40000;
     text-decoration: none;
     color: #ffffff;
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     border-radius: .3em;
     font-size: 2.5vw;
-    /*float: left;*/
+    border: none;
     font-family: 'Roboto', sans-serif;
+    background: #74471e;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgb(0,0,0,0,20);
+    top: 3em;
+    display: none;
 }
 .view-all-customer-log-button a:hover {
     background-color: #f10202;
@@ -429,9 +471,44 @@ img {
 
 }
 
+
+
+ /* Medium Devices, Desktops */
+ @media only screen and (min-width : 892px) {
+
+     /* BODY (BACKGROUND IMAGE) */
+     .bg {
+        position:relative;
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        font-family: 'Roboto', sans-serif;
+        height: 200vh;
+        max-width: 100%;
+        padding: 10em 3em;
+    }
+    /* BODY (BACKGROUND IMAGE) END */
+
+    .overlay {
+        position: absolute;
+        height: auto;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 7em 3em 1em 3em;
+    }
+    
+
+}
+
+/*
 @media only screen and (min-width: 1030px) {
 
-    /* BODY (BACKGROUND IMAGE) */
+    /* BODY (BACKGROUND IMAGE) *
 body {
     padding-top: 1em;
     height: 100vh;
@@ -440,23 +517,23 @@ body {
     background-position: top center;
     background-color: rgb(59, 59, 59);
 }
-/* BODY (BACKGROUND IMAGE) END */
+/* BODY (BACKGROUND IMAGE) END *
 
-/* BUTTON CONTAINER */
+/* BUTTON CONTAINER *
 .button-container {
     background-color: rgba(255, 224, 46, 0.4);  
     width: 100%;
     height: auto;
     padding: 2.5em 0 1em 0;
-    /*margin: 1.5em auto 0 auto;*/
+    /*margin: 1.5em auto 0 auto;*
     margin-top: 1.5em;
     text-align: center;
     border-radius: .5em;
 }
-/* BUTTON CONTAINER END */
+/* BUTTON CONTAINER END *
 
 
-/* SECOND BACKGROUND */
+/* SECOND BACKGROUND *
 .second-bg-container {
     animation: fadeIn 2s forwards;
 }
@@ -479,7 +556,9 @@ body {
     padding: 0 1.5em 2em 1.5em;
     border-radius: 20px;
     box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
-}
-/* SECOND BACKGROUND END */
+ }
+ /* SECOND BACKGROUND END *
 
 }
+
+*/
