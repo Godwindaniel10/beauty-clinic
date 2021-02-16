@@ -551,6 +551,28 @@
     }
     /* VIEW ALL CUSTOMER LOG BUTTON END */
 
+    
+/***** scroll bar *****/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #eff1f5;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #b4725c;
+    border: 2px solid #eff1f5;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/***** scroll bar end*****/
+
  
 
 }
