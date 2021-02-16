@@ -444,13 +444,14 @@ p {
         color: white;
         text-decoration: none;
         /*background-color: #ff4500;*/
-        padding: .6em .5em;
+        padding: .6em 1.2em;
         border-radius: 50px;
         cursor: pointer;
         margin: 1em 0;
     }
     .nav-bar .all-customer-log {
         background-color: #ff8800e0;
+        display: none;
     }
      .nav-bar .active {
         background-color:#00af91;
@@ -470,13 +471,13 @@ p {
         background-repeat: no-repeat;
         background-image: url('https://images.pexels.com/photos/4287397/pexels-photo-4287397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         font-family: 'Roboto', sans-serif;
-        height: 150vh;
+        height: 200vh;
         width: 100%;
         
     }
     .overlay {
         position: absolute;
-        height: 100%;
+        height: 200vh;
         width: 100%;
         top: 0;
         left: 0;
