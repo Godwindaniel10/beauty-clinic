@@ -31,29 +31,6 @@
 }
 
 
-/*body {
-    background-image: url('https://cdn.pixabay.com/photo/2016/07/26/16/47/cosmetics-1543271_960_720.jpg');
-    background-image: url('https://cdn.pixabay.com/photo/2020/09/02/16/32/woman-5538807_960_720.jpg');
-    background-image: url('https://images.pexels.com/photos/4287397/pexels-photo-4287397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-color: #2a3e52;
-    height: 100vh;
-    padding: 1em 3em 1em 3em;
-    font-family: 'Roboto', sans-serif;
-
-    position:relative;
-    background-size: cover;
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-image: url('https://images.pexels.com/photos/4287397/pexels-photo-4287397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    font-family: 'Roboto', sans-serif;
-    padding: 1em 3em 1em 3em;
-    height: 100vh;
-}*/
-
-
 
 
 /***** search bar *****/
@@ -136,7 +113,7 @@
     background-color:#00af91;
 }
 .nav-bar .active:hover {
-    background-color: rgb(0, 190, 0);
+    background-color: #00927a;
     transition: all 0.5s;
 }
 
@@ -246,7 +223,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #00b698;
+    background-color: #00836d;
     transition: all 0.5s;
 }
 button:focus {
@@ -602,10 +579,6 @@ p {
     }
     /* FORM BACKGROUND END */
 
-    /* BUTTONS */
-    .buttons {
-       /* margin-bottom: 3.5em;*/
-    }
 
     /* NEW CUSTOMER BUTTON */
     .new-customer-container {
