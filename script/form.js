@@ -222,6 +222,6 @@ $(document).ready(function(){
 })
 
 */
-$('.input-phone').intlInputPhone();
+
 
 
