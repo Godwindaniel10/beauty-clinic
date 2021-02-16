@@ -163,7 +163,7 @@
         font-family: 'Roboto', sans-serif;
         height: 150vh;
         max-width: 100%;
-        padding: 10em 3em;
+        padding: 0em 3em;
     }
     /* BODY (BACKGROUND IMAGE) END */
  
@@ -176,56 +176,252 @@
         right: 0;
         bottom:0;
         background: rgba(0, 0, 0, 0.75);
-        padding: 7em 3em 1em 3em;
+        padding: 10em 3em 1em 3em;
     }
 
     /* SECOND BACKGROUND */
-   .second-bg-container {
-    animation: fadeIn 2s forwards;
-}
-@keyframes fadeIn {
-    from {
-       opacity: 0;
-       transform: translateY(-2em);
+    .second-bg-container {
+        animation: fadeIn 2s forwards;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    @keyframes fadeIn {
+        from {
+           opacity: 0;
+           transform: translateY(-2em);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-}
-.second-bg {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(121, 71, 25, 0.897);
-    /*margin: 5em 0 0 5em;*/
-    text-align: center;
-    padding: 0 2em 2em 2em;
-    border-radius: 20px;
-    margin: 0 auto;
-    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
-}
-/* SECOND BACKGROUND END */
+    .second-bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(121, 71, 25, 0.897);
+        /*margin: 5em 0 0 5em;*/
+        text-align: center;
+        padding: 0 2em 2em 2em;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
+    }
+    /* SECOND BACKGROUND END */
 
     /* BUTTON CONTAINER */
-   .button-container {
-    background-color: rgba(255, 224, 46, 0.4);
-    width: 100%;
-    height: auto;
-    padding: 3em 3em;
-    margin-top: 2em;
-    text-align: center;
-    border-radius: .5em;
+    .button-container {
+        background-color: rgba(255, 224, 46, 0.4);
+        width: 100%;
+        height: auto;
+        padding: 5em 3em;
+        margin-top: 3em;
+        text-align: center;
+        border-radius: .5em;
+    }
+    /* BUTTON CONTAINER END */
+
+    /* REGISTER BUTTON */
+    .new-customer-button a{
+        text-decoration: none;
+        color: #ffffff;
+        padding: .8em 1.5em;
+        border-radius: .3em;
+        font-size: 2.5vw;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        background: #74471e;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 5px 15px rgb(0,0,0,0,20);
+    }
+ 
+    /* REGISTER BUTTON END */
+ 
+
+    /* MAMA-TEGA LOGO */
+    img {
+        width: 35%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: -4.5em;
+    }
+    /* MAMA-TEGA LOGO END */
+
+    /* REGISTER CUSTOMER  HEADER */
+    .register-customer-text {
+        font-size: 5vw;
+        color: #ffffff;
+        font-family: 'Bubblegum Sans', cursive;
+        margin-top: 2.5em;
+        text-shadow: 2px 5px 4px #000000;
+    }
+    /* REGISTER CUSTOMER  HEADER END */
+ 
+    /* VIEW ALL CUSTOMER LOG BUTTON */
+    .view-all-customer-log-button {
+        padding: 1.5em 0 0 0;
+        display: none;
+    }
+    .view-all-customer-log-button a{
+        background-color: #d40000;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: .3em;
+        padding: 1em 1em;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .view-all-customer-log-button a:hover {
+        background-color: #f10202;
+        color: #ffffff;
+        transition: all 0.3s;
+    }
+    /* VIEW ALL CUSTOMER LOG BUTTON END */
+
 }
-/* BUTTON CONTAINER END */
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+
+    /* BODY (BACKGROUND IMAGE) */
+    .bg {
+        position:relative;
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        font-family: 'Roboto', sans-serif;
+        height: 150vh;
+        max-width: 100%;
+        padding: 0em 3em;
+    }
+    /* BODY (BACKGROUND IMAGE) END */
+ 
+    .overlay {
+        position: absolute;
+        height: 150vh;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 10em 3em 1em 3em;
+    }
+
+    /* SECOND BACKGROUND */
+    .second-bg-container {
+        animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+        from {
+           opacity: 0;
+           transform: translateY(-2em);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .second-bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(121, 71, 25, 0.897);
+        /*margin: 5em 0 0 5em;*/
+        text-align: center;
+        padding: 0 2em 2em 2em;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
+    }
+    /* SECOND BACKGROUND END */
+
+    /* BUTTON CONTAINER */
+    .button-container {
+        background-color: rgba(255, 224, 46, 0.4);
+        width: 100%;
+        height: auto;
+        padding: 7em 3em;
+        margin-top: 3em;
+        text-align: center;
+        border-radius: .5em;
+    }
+    /* BUTTON CONTAINER END */
+
+    /* REGISTER BUTTON */
+    .new-customer-button a{
+        text-decoration: none;
+        color: #ffffff;
+        padding: .8em 1.5em;
+        border-radius: .3em;
+        font-size: 2.5vw;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        background: #74471e;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 5px 15px rgb(0,0,0,0,20);
+    }
+ 
+    /* REGISTER BUTTON END */
+ 
+
+    /* MAMA-TEGA LOGO */
+    img {
+        width: 35%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: -5.5em;
+    }
+    /* MAMA-TEGA LOGO END */
+
+    /* REGISTER CUSTOMER  HEADER */
+    .register-customer-text {
+        font-size: 5vw;
+        color: #ffffff;
+        font-family: 'Bubblegum Sans', cursive;
+        margin-top: 2.5em;
+        text-shadow: 2px 5px 4px #000000;
+    }
+    /* REGISTER CUSTOMER  HEADER END */
+ 
+    /* VIEW ALL CUSTOMER LOG BUTTON */
+    .view-all-customer-log-button {
+        padding: 1.5em 0 0 0;
+        display: none;
+    }
+    .view-all-customer-log-button a{
+        background-color: #d40000;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: .3em;
+        padding: 1em 1em;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .view-all-customer-log-button a:hover {
+        background-color: #f10202;
+        color: #ffffff;
+        transition: all 0.3s;
+    }
+    /* VIEW ALL CUSTOMER LOG BUTTON END */
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
     
-
 }
-
-
-
-
-
 
 
 
