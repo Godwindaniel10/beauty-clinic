@@ -10,19 +10,254 @@
     box-sizing: border-box;
 }
 
-/* BODY (BACKGROUND IMAGE) */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    
+    /* BODY (BACKGROUND IMAGE) */
+    .bg {
+       position:relative;
+       background-size: cover;
+       background-position:  center;
+       background-repeat: no-repeat;
+       background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+       font-family: 'Roboto', sans-serif;
+       height: 150vh;
+       max-width: 100%;
+       padding: 10em 3em;
+   }
+   /* BODY (BACKGROUND IMAGE) END */
+
+   .overlay {
+       position: absolute;
+       height: 150vh;
+       max-width: 100%;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom:0;
+       background: rgba(0, 0, 0, 0.75);
+       padding: 7em 3em 1em 3em;
+   }
+   
+    
+   /* SECOND BACKGROUND */
+   .second-bg-container {
+       animation: fadeIn 2s forwards;
+   }
+   @keyframes fadeIn {
+       from {
+          opacity: 0;
+          transform: translateY(-2em);
+       }
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+   .second-bg {
+       width: 100%;
+       height: 100%;
+       background-color: rgba(121, 71, 25, 0.897);
+       /*margin: 5em 0 0 5em;*/
+       text-align: center;
+       padding: 0 2em 2em 2em;
+       border-radius: 20px;
+       margin: 0 auto;
+       box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
+   }
+   /* SECOND BACKGROUND END */
+
+/* REGISTER CUSTOMER  HEADER */
+.register-customer-text {
+   font-size: 7vw;
+   color: #ffffff;
+   /*border-bottom: 2px solid #2c2c2c;*/
+   font-family: 'Bubblegum Sans', cursive;
+   /*padding-bottom: .5em;*/
+   margin-top: 2.5em;
+   text-shadow: 2px 5px 4px #000000;
+}
+/* REGISTER CUSTOMER  HEADER END */
+
+/* REGISTER BUTTON */
+.new-customer-button a{
+   text-decoration: none;
+   color: #ffffff;
+   padding: 1em 1.5em;
+   border-radius: .3em;
+   font-size: 3.5vw;
+   border: none;
+   font-family: 'Roboto', sans-serif;
+   background: #74471e;
+   cursor: pointer;
+   text-transform: uppercase;
+   outline: none;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 5px 15px rgb(0,0,0,0,20);
+}
+
+/* REGISTER BUTTON END */
+
+   /* MAMA-TEGA LOGO */
+   img {
+       width: 40%;
+       height: auto;
+       border-radius: 50%;
+       margin-top: -1.5em;
+   }
+   /* MAMA-TEGA LOGO END */
+
+   /* BUTTON CONTAINER */
+   .button-container {
+       background-color: rgba(255, 224, 46, 0.4);
+       width: 100%;
+       height: auto;
+       padding: 3em 3em;
+       margin-top: 2em;
+       text-align: center;
+       border-radius: .5em;
+   }
+   /* BUTTON CONTAINER END */
+
+   /* VIEW ALL CUSTOMER LOG BUTTON */
+   .view-all-customer-log-button {
+       padding: 1.5em 0 0 0;
+       /*margin-top: 2em;*/
+       display: none;
+   }
+   .view-all-customer-log-button a{
+       background-color: #d40000;
+       text-decoration: none;
+       color: #ffffff;
+       border-radius: .3em;
+       padding: 1em 1em;
+       font-size: 4vw;
+       /*float: left;*/
+       font-family: 'Roboto', sans-serif;
+   }
+   .view-all-customer-log-button a:hover {
+       background-color: #f10202;
+       color: #ffffff;
+       transition: all 0.3s;
+   }
+   /* VIEW ALL CUSTOMER LOG BUTTON END */
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+     /* BODY (BACKGROUND IMAGE) */
+     .bg {
+        position:relative;
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        font-family: 'Roboto', sans-serif;
+        height: 150vh;
+        max-width: 100%;
+        padding: 10em 3em;
+    }
+    /* BODY (BACKGROUND IMAGE) END */
+ 
+    .overlay {
+        position: absolute;
+        height: 150vh;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 7em 3em 1em 3em;
+    }
+
+    /* SECOND BACKGROUND */
+   .second-bg-container {
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from {
+       opacity: 0;
+       transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.second-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(121, 71, 25, 0.897);
+    /*margin: 5em 0 0 5em;*/
+    text-align: center;
+    padding: 0 2em 2em 2em;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
+}
+/* SECOND BACKGROUND END */
+
+    /* BUTTON CONTAINER */
+   .button-container {
+    background-color: rgba(255, 224, 46, 0.4);
+    width: 100%;
+    height: auto;
+    padding: 3em 3em;
+    margin-top: 2em;
+    text-align: center;
+    border-radius: .5em;
+}
+/* BUTTON CONTAINER END */
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BODY (BACKGROUND IMAGE) *
 body {
     /*padding-top: 5em;*/
     /*height: 100vh;*/
     /*background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: top center;*/
-    /*background-color: rgb(0, 0, 0);*/
+    /*background-color: rgb(0, 0, 0);*
 }
 /* BODY (BACKGROUND IMAGE) END */
 
 
-/* MAMA-TEGA LOGO */
+/* MAMA-TEGA LOGO *
 img {
     width: 30%;
     border-radius: 50%;
@@ -31,7 +266,7 @@ img {
 /* MAMA-TEGA LOGO END */
 
 
-/* SECOND BACKGROUND */
+/* SECOND BACKGROUND *
 .second-bg-container {
     animation: fadeIn 2s forwards;
 }
@@ -57,7 +292,7 @@ img {
 /* SECOND BACKGROUND END */
 
 
-/* REGISTER CUSTOMER  HEADER */
+/* REGISTER CUSTOMER  HEADER *
 .register-customer-text {
     font-size: 2rem;
     color: #ffffff;
@@ -70,13 +305,13 @@ img {
 /* REGISTER CUSTOMER  HEADER END */
 
 
-/* BUTTON CONTAINER */
+/* BUTTON CONTAINER *
 .button-container {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
     height: auto;
     padding: 2.5em 0 1em 0;
-    /*margin: 1.5em auto 0 auto;*/
+    /*margin: 1.5em auto 0 auto;*
     margin-top: 1.5em;
     text-align: center;
     border-radius: .5em;
@@ -84,7 +319,7 @@ img {
 /* BUTTON CONTAINER END */
 
 
-/* REGISTER BUTTON */
+/* REGISTER BUTTON *
 .new-customer-button a{
     text-decoration: none;
     color: #ffffff;
@@ -131,7 +366,7 @@ img {
 
 
 
-/* Shutter In Horizontal */
+/* Shutter In Horizontal *
 .hvr-shutter-in-horizontal {
     display: inline-block;
     vertical-align: middle;
@@ -209,10 +444,10 @@ img {
 */
 
 
-
+/*
 @media only screen and (max-width: 480px) {
 
-     /* BODY (BACKGROUND IMAGE) */
+     /* BODY (BACKGROUND IMAGE) *
      .bg {
         position:relative;
         background-size: cover;
@@ -224,7 +459,7 @@ img {
         max-width: 100%;
         padding: 10em 3em;
     }
-    /* BODY (BACKGROUND IMAGE) END */
+    /* BODY (BACKGROUND IMAGE) END *
 
     .overlay {
         position: absolute;
@@ -239,7 +474,7 @@ img {
     }
     
      
-    /* SECOND BACKGROUND */
+    /* SECOND BACKGROUND *
     .second-bg-container {
         animation: fadeIn 2s forwards;
     }
@@ -257,37 +492,37 @@ img {
         width: 100%;
         height: 100%;
         background-color: rgba(121, 71, 25, 0.897);
-        /*margin: 5em 0 0 5em;*/
+        /*margin: 5em 0 0 5em;*
         text-align: center;
         padding: 0 2em 2em 2em;
         border-radius: 20px;
         margin: 0 auto;
         box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
     }
-    /* SECOND BACKGROUND END */
+    /* SECOND BACKGROUND END *
 
-/* REGISTER CUSTOMER  HEADER */
+/* REGISTER CUSTOMER  HEADER *
 .register-customer-text {
     font-size: 7vw;
     color: #ffffff;
     border-bottom: 2px solid #2c2c2c;
     font-family: 'Bubblegum Sans', cursive;
-    /*padding-bottom: .5em;*/
+    /*padding-bottom: .5em;*
     margin-top: 2.5em;
     text-shadow: 2px 5px 4px #000000;
 }
-/* REGISTER CUSTOMER  HEADER END */
+/* REGISTER CUSTOMER  HEADER END *
 
-    /* MAMA-TEGA LOGO */
+    /* MAMA-TEGA LOGO *
     img {
         width: 40%;
         height: auto;
         border-radius: 50%;
         margin-bottom: -1.5em;
     }
-    /* MAMA-TEGA LOGO END */
+    /* MAMA-TEGA LOGO END *
 
-    /* BUTTON CONTAINER */
+    /* BUTTON CONTAINER *
     .button-container {
         background-color: rgba(255, 224, 46, 0.4);
         width: 100%;
@@ -297,12 +532,12 @@ img {
         text-align: center;
         border-radius: .5em;
     }
-    /* BUTTON CONTAINER END */
+    /* BUTTON CONTAINER END *
 
-    /* VIEW ALL CUSTOMER LOG BUTTON */
+    /* VIEW ALL CUSTOMER LOG BUTTON *
     .view-all-customer-log-button {
         padding: 1.5em 0 0 0;
-        /*margin-top: 2em;*/
+        /*margin-top: 2em;*
         display: none;
     }
     .view-all-customer-log-button a{
@@ -312,7 +547,7 @@ img {
         border-radius: .3em;
         padding: 1em 1em;
         font-size: 4vw;
-        /*float: left;*/
+        /*float: left;*
         font-family: 'Roboto', sans-serif;
     }
     .view-all-customer-log-button a:hover {
@@ -320,19 +555,19 @@ img {
         color: #ffffff;
         transition: all 0.3s;
     }
-    /* VIEW ALL CUSTOMER LOG BUTTON END */
-
-
+    /* VIEW ALL CUSTOMER LOG BUTTON END *
 
 }
+*/
+
 
 
 
 /***** ipad *****/
-
+/*
 @media only screen and (min-width: 480px) {
 
-    /* BODY (BACKGROUND IMAGE) */
+    /* BODY (BACKGROUND IMAGE) *
     .bg {
         position:relative;
         background-size: cover;
@@ -344,7 +579,7 @@ img {
         max-width: 100%;
         padding: 10em 3em;
     }
-    /* BODY (BACKGROUND IMAGE) END */
+    /* BODY (BACKGROUND IMAGE) END *
 
     .overlay {
         position: absolute;
@@ -359,7 +594,7 @@ img {
     }
     
 
-    /* SECOND BACKGROUND */
+    /* SECOND BACKGROUND *
     .second-bg-container {
         animation: fadeIn 2s forwards;
     }
@@ -377,25 +612,25 @@ img {
         width: 100%;
         height: 100%;
         background-color: rgba(121, 71, 25, 0.705);
-        /*margin: 5em 0 0 5em;*/
+        /*margin: 5em 0 0 5em;*
         text-align: center;
         padding: 0 2em 2em 2em;
         border-radius: 20px;
         margin: 0 auto;
         box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);
     }
-    /* SECOND BACKGROUND END */
+    /* SECOND BACKGROUND END *
 
-     /* MAMA-TEGA LOGO */
+     /* MAMA-TEGA LOGO *
      img {
         width: 40%;
         height: auto;
         border-radius: 50%;
         margin-bottom: -1.5em;
     }
-    /* MAMA-TEGA LOGO END */
+    /* MAMA-TEGA LOGO END *
 
-/* REGISTER CUSTOMER  HEADER */
+/* REGISTER CUSTOMER  HEADER *
 .register-customer-text {
     font-size: 7vw;
     color: #ffffff;
@@ -405,10 +640,10 @@ img {
     margin-top: 2.5em;
     text-shadow: 2px 5px 4px #000000;
 }
-/* REGISTER CUSTOMER  HEADER END */
+/* REGISTER CUSTOMER  HEADER END *
 
    
-/* BUTTON CONTAINER */
+/* BUTTON CONTAINER *
 .button-container {
     background-color: rgba(255, 224, 46, 0.4);
     width: 100%;
@@ -418,10 +653,10 @@ img {
     text-align: center;
     border-radius: .5em;
 }
-/* BUTTON CONTAINER END */
+/* BUTTON CONTAINER END *
 
 
-/* REGISTER BUTTON */
+/* REGISTER BUTTON *
 .new-customer-button a{
     text-decoration: none;
     color: #ffffff;
@@ -439,11 +674,11 @@ img {
     box-shadow: 0 5px 15px rgb(0,0,0,0,20);
 }
 
-/* REGISTER BUTTON END */
+/* REGISTER BUTTON END *
 
 
-/* VIEW ALL CUSTOMER LOG BUTTON */
-/*** disabled ***/
+/* VIEW ALL CUSTOMER LOG BUTTON *
+/*** disabled ***
 .view-all-customer-log-button a{
     text-decoration: none;
     color: #ffffff;
@@ -467,32 +702,32 @@ img {
     color: #ffffff;
     transition: all 0.3s;
 }
-/* VIEW ALL CUSTOMER LOG BUTTON END */
+/* VIEW ALL CUSTOMER LOG BUTTON END *
 
 }
+*/
 
 
-
- /* Medium Devices, Desktops */
+ /* Medium Devices, Desktops *
  @media only screen and (min-width : 892px) {
 
-     /* BODY (BACKGROUND IMAGE) */
+     /* BODY (BACKGROUND IMAGE) *
      .bg {
         position:relative;
         background-size: cover;
-        background-position:  center;
+        background-position: top center;
         background-repeat: no-repeat;
-        background-image: url('https://images.pexels.com/photos/2918195/pexels-photo-2918195.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-image: url('https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         font-family: 'Roboto', sans-serif;
-        height: 200vh;
+        height: 100vh;
         max-width: 100%;
         padding: 10em 3em;
     }
-    /* BODY (BACKGROUND IMAGE) END */
+    /* BODY (BACKGROUND IMAGE) END *
 
     .overlay {
         position: absolute;
-        height: auto;
+        height: 100vh;
         max-width: 100%;
         top: 0;
         left: 0;
@@ -501,6 +736,45 @@ img {
         background: rgba(0, 0, 0, 0.75);
         padding: 7em 3em 1em 3em;
     }
+
+    /* BUTTON CONTAINER *
+    .button-container {
+        background-color: #ffe02e66;
+        width: 100%;
+        height: auto;
+        padding: 3em 0 3em 0;
+        margin-top: 1em;
+        text-align: center;
+        border-radius: .5em;
+    }
+/* BUTTON CONTAINER END */
+
+
+/* SECOND BACKGROUND *
+.second-bg-container {
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from {
+       opacity: 0;
+       transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.second-bg {
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(121, 71, 25, 0.9);
+   /* margin: 2em 0 0 5em;
+    text-align: center;
+    padding: 0 1.5em 2em 1.5em;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.493), 0px 20px 20px 0 rgba(0, 0, 0, 0.432);*
+}
+ /* SECOND BACKGROUND END *
     
 
 }
@@ -559,6 +833,7 @@ body {
  }
  /* SECOND BACKGROUND END *
 
-}
+}*/
 
-*/
+
+
