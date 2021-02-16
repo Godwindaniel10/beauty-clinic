@@ -258,26 +258,6 @@
     }
     /* REGISTER CUSTOMER  HEADER END */
  
-    /* VIEW ALL CUSTOMER LOG BUTTON */
-    .view-all-customer-log-button {
-        padding: 1.5em 0 0 0;
-        display: none;
-    }
-    .view-all-customer-log-button a{
-        background-color: #d40000;
-        text-decoration: none;
-        color: #ffffff;
-        border-radius: .3em;
-        padding: 1em 1em;
-        font-size: 4vw;
-        font-family: 'Roboto', sans-serif;
-    }
-    .view-all-customer-log-button a:hover {
-        background-color: #f10202;
-        color: #ffffff;
-        transition: all 0.3s;
-    }
-    /* VIEW ALL CUSTOMER LOG BUTTON END */
 
 }
 
@@ -391,7 +371,7 @@
     }
     /* REGISTER CUSTOMER  HEADER END */
  
-    /* VIEW ALL CUSTOMER LOG BUTTON */
+    /* VIEW ALL CUSTOMER LOG BUTTON *
     .view-all-customer-log-button {
         padding: 1.5em 0 0 0;
         display: none;
