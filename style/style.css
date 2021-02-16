@@ -129,7 +129,7 @@
        display: none;
    }
    .view-all-customer-log-button a{
-       background-color: #d40000;
+       /*background-color: #d40000;*/
        text-decoration: none;
        color: #ffffff;
        border-radius: .3em;
@@ -139,7 +139,7 @@
        font-family: 'Roboto', sans-serif;
    }
    .view-all-customer-log-button a:hover {
-       background-color: #f10202;
+       /*background-color: #f10202;*/
        color: #ffffff;
        transition: all 0.3s;
    }
@@ -264,7 +264,7 @@
         display: none;
     }
     .view-all-customer-log-button a{
-        background-color: #d40000;
+        /*background-color: #d40000;*/
         text-decoration: none;
         color: #ffffff;
         border-radius: .3em;
@@ -273,7 +273,7 @@
         font-family: 'Roboto', sans-serif;
     }
     .view-all-customer-log-button a:hover {
-        background-color: #f10202;
+        /*background-color: #f10202;*/
         color: #ffffff;
         transition: all 0.3s;
     }
@@ -399,7 +399,7 @@
         display: none;
     }
     .view-all-customer-log-button a{
-        background-color: #d40000;
+        background-color: #91091e;
         text-decoration: none;
         color: #ffffff;
         border-radius: .3em;
@@ -408,7 +408,7 @@
         font-family: 'Roboto', sans-serif;
     }
     .view-all-customer-log-button a:hover {
-        background-color: #f10202;
+        background-color: #91091e;
         color: #ffffff;
         transition: all 0.3s;
     }
@@ -519,7 +519,7 @@
         font-size: 1.2rem;
         border: none;
         font-family: 'Roboto', sans-serif;
-        background: #74471e;
+        background: #77471b;
         cursor: pointer;
         /*text-transform: uppercase;*/
         outline: none;
@@ -536,7 +536,7 @@
         display: block;
     }
     .view-all-customer-log-button a{
-        background-color: #d40000;
+        background-color: #91091e;
         text-decoration: none;
         color: #ffffff;
         border-radius: .3em;
@@ -545,7 +545,7 @@
         font-family: 'Roboto', sans-serif;
     }
     .view-all-customer-log-button a:hover {
-        background-color: #f10202;
+        background-color: #a50920;
         color: #ffffff;
         transition: all 0.3s;
     }
